@@ -17,7 +17,6 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 app.use(express.static('public'))
 
-
 app.use('/api/courses', courses);  // for all routes starting with /api/courses, use the courses router
 app.use('/', home);
 
